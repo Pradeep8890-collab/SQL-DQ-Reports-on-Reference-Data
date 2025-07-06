@@ -1,0 +1,11 @@
+-- Overall summary for dashboard/Power BI
+use IB_Data_Project
+SELECT 
+  COUNT(*) AS total_rows,
+  COUNT(DISTINCT RHP_ID) AS unique_rhp,
+  COUNT(DISTINCT BR_ID) AS unique_br,
+  COUNT(DISTINCT Acct_ID) AS unique_acct,
+  COUNT(DISTINCT Prdt) AS unique_products,
+  SUM(CASE WHEN Acct_status = 'Inactive' THEN 1 ELSE 0 END) AS inactive_accounts,
+  SUM(CASE WHEN Acct_status = 'Active' THEN 1 ELSE 0 END) AS Active_accounts
+FROM IB_Ref_data;
