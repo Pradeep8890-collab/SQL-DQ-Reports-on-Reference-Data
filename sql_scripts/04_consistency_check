@@ -1,0 +1,6 @@
+-- Check consistency in BU for same BR_ID
+use IB_Data_Project
+SELECT BR_ID, COUNT(DISTINCT BU) AS bu_count
+FROM IB_Ref_data
+GROUP BY BR_ID
+HAVING COUNT(DISTINCT BU) > 1;
