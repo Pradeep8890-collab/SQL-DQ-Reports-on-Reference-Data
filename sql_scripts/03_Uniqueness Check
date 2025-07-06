@@ -1,0 +1,6 @@
+-- Ensure unique Account_IDs (Account IDs should not be repeated)
+use IB_Data_Project
+SELECT Acct_ID, COUNT(*) as occurrences
+FROM IB_Ref_data
+GROUP BY Acct_ID
+HAVING COUNT(*) > 1;
