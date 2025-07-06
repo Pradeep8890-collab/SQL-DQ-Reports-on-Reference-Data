@@ -1,0 +1,8 @@
+-- Missing values check (check if any of the critical data elements are missing)
+use IB_Data_Project
+SELECT 
+  COUNT(*) AS total_rows,
+  SUM(CASE WHEN RHP_ID IS NULL THEN 1 ELSE 0 END) AS missing_rhp,
+  SUM(CASE WHEN BR_ID IS NULL THEN 1 ELSE 0 END) AS missing_br,
+  SUM(CASE WHEN Acct_ID IS NULL THEN 1 ELSE 0 END) AS missing_acct
+FROM IB_Ref_data;                         
