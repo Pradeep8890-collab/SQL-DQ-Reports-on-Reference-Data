@@ -1,0 +1,8 @@
+-- Check for invalid values in status fields (basically check if any of these data points have values other than defined value)
+use IB_Data_Project
+SELECT *
+FROM IB_Ref_data
+WHERE BR_Status NOT IN ('Active', 'Inactive')
+   OR Acct_status NOT IN ('Active', 'Inactive')
+   OR Prd_stauts NOT IN ('Active', 'Inactive')
+   OR Oth_dependency_stuatus NOT IN ('Active', 'Inactive');
