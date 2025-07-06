@@ -1,0 +1,7 @@
+-- One-to-many hierarchy check (RHP_ID → BR_ID → Acct_ID)
+use IB_Data_Project
+SELECT RHP_ID, COUNT(DISTINCT BR_ID) as unique_br,
+              COUNT(DISTINCT Acct_ID) as unique_acct
+FROM IB_Ref_data
+GROUP BY RHP_ID
+ORDER BY unique_br DESC;
