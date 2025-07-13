@@ -13,7 +13,7 @@ Note this is not the the exhaustive list but some of the basic data quality chec
 - Hierarchical Data Integrity
 <br><br>
 ## Dateset:
-Data for this scenario is dummy data generated for the purpose of this project with some of critical data elements that are checked as part of daily data quality reporting exercise.
+Data used for this project is dummy data generated for the purpose of this project with some of the critical data elements that are checked as part of daily data quality reporting exercise.
 <br>
 ## How to use:
 Each scenario is presented in a question-and-answer format. The SQL scripts provided are designed to run on most standard SQL platforms (PostgreSQL, MySQL, SQL Server, SQLite with minor adjustments).
