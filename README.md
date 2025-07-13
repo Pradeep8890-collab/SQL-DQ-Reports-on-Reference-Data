@@ -1,4 +1,4 @@
-# SQL-driven data quality checks on a synthetic (dummy) banking dataset
+# SQL-driven data quality checks on a synthetic (dummy) Investment banking dataset
 Comprehensive Data Quality Analysis on IB Reference Data using SQL
 <br>
 Author - Pradeep
