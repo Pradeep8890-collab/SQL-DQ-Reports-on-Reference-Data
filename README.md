@@ -8,6 +8,6 @@ Author - Pradeep
 <br><br>
 Note this is not the the exhaustive list but some of the basic data quality checks done by publishing control reports on - 
 <br>
-Data Profiling and Quality Checks<br>
-Relational Data Analysis<br>
-Hierarchical Data Integrity
+- Data Profiling and Quality Checks<br>
+- Relational Data Analysis<br>
+- Hierarchical Data Integrity
